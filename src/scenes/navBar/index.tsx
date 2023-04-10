@@ -7,7 +7,7 @@ const NavBar = (props: Props) => {
   return (
     <nav>
       <div className="bg-stone flex items-center justify-between fixed top-0 z-30 w-full py-5">
-        <div className="flex items-center justify-between mx-auto w-5/6">
+        <div className="flex items-center justify-between mx-auto">
           <div className="flex items-center w-full gap-20">
             {/*LEFT SIDE*/}
             <img alt="logo" src={Logo} />
