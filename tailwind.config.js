@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    backgroundImage: {
+      'backgroundWaves': "url('/src/assets/Waves.png')"
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
