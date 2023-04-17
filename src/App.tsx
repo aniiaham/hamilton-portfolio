@@ -1,5 +1,6 @@
 import Home from "./scenes/home"
 import NavBar from "./scenes/navBar" 
+import Portfolio from "./scenes/about"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Home />
+      <Portfolio />
     </div>
   )
 }
