@@ -1,12 +1,13 @@
-import React from "react";
-
 type Props = {};
 
 const Works = (props: Props) => {
   return (
-    <section className="m-8 gap-16 pb-20 pt-20 md:h-full" id="about">
+    <section
+      className="h-full w-full bg-gray pb-20 pt-20 first-letter:gap-16"
+      id="about"
+    >
       <div>
-        <div>
+        <div className="m-10">
           <h1 className="text-3xl font-extrabold text-cyan">WHO AM I?</h1>
           <p className="md:text-startv mt-8 font-primary text-lg font-medium">
             As a Junior Front-End Developer I am a highly motivated and

@@ -39,10 +39,34 @@ const Home = (props: Props) => {
             <div className="mx-h-fit bottom-0 w-full py-20">
               <div className="mx-auto w-5/6">
                 <div className="flex items-center justify-between">
-                  <img alt="inst" src={Instagram} />
-                  <img alt="telegram" src={Telegram} />
-                  <img alt="github" src={GitHub} />
-                  <img alt="linkedin" src={LinkedIn} />
+                  <a
+                    href="https://www.instagram.com/aniiahamilton/"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <img alt="instagram" src={Instagram} />
+                  </a>
+                  <a
+                    href="https://t.me/aniiahamilton"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <img alt="telegram" src={Telegram} />
+                  </a>
+                  <a
+                    href="https://github.com/aniiaham"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <img alt="github" src={GitHub} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/aniia-hamilton/"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <img alt="linkedin" src={LinkedIn} />
+                  </a>
                 </div>
               </div>
             </div>
