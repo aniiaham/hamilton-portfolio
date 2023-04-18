@@ -1,21 +1,22 @@
 import React from "react";
 import Photo from "@/assets/Photo.png";
-import Waves from "@/assets/Waves2.svg";
+import Waves from "@/assets/Waves.svg";
 import LinkedIn from "@/assets/Linkedin.svg";
 import Instagram from "@/assets/instagram.svg";
 import Telegram from "@/assets/telegram.svg";
 import GitHub from "@/assets/github.svg";
+import HomePageImage from "@/assets/homepage.png";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <section className="w-full gap-16 pt-20 md:h-full">
+    <section className="relative w-full gap-16 overflow-hidden bg-homepage-bg pt-20 md:h-full">
       <div className="mx-auto w-full items-center justify-center md:flex md:h-5/6">
         <img
           alt="background"
           src={Waves}
-          className="pointer-events-none absolute right-0 -z-50 max-h-fit max-w-3xl object-cover"
+          className="pointer-events-none absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply "
         />
         <div className="mt-32">
           <div className="grid grid-flow-col grid-rows-2 gap-8">

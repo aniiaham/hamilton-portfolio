@@ -18,6 +18,9 @@ export default {
       bermuda: "#78dcca",
     },
     extend: {
+      backgroundImage: {
+        "homepage-bg": "url('/src/assets/homepage.png')",
+      },
       fontFamily: {
         primary: ["Abhaya Libres", "sans-serif"],
       },
