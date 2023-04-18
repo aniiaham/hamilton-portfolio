@@ -1,12 +1,11 @@
+import Abstract from "@/assets/abstract3.png";
 type Props = {};
 
 const Works = (props: Props) => {
   return (
-    <section
-      className="h-full w-full bg-gray pb-20 pt-20 first-letter:gap-16"
-      id="about"
-    >
+    <section className="h-full w-full pb-20 first-letter:gap-16" id="about">
       <div>
+        <img alt="background" src={Abstract} />
         <div className="m-10">
           <h1 className="text-3xl font-extrabold text-cyan">WHO AM I?</h1>
           <p className="md:text-startv mt-8 font-primary text-lg font-medium">
