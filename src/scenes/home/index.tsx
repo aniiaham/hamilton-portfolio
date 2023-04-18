@@ -1,6 +1,6 @@
 import React from "react";
 import Photo from "@/assets/Photo.png";
-import Waves from "@/assets/Waves.svg";
+import Waves2 from "@/assets/Waves2.svg";
 import LinkedIn from "@/assets/Linkedin.svg";
 import Instagram from "@/assets/instagram.svg";
 import Telegram from "@/assets/telegram.svg";
@@ -10,14 +10,14 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <section className="m-8 gap-16 pb-20 pt-20 md:h-full">
+    <section className=" gap-16  pt-20 md:h-full">
       <div className="mx-auto w-full items-center justify-center md:flex md:h-5/6">
         <img
           alt="background"
-          src={Waves}
+          src={Waves2}
           className="pointer-events-none absolute bottom-0 right-0 -z-50 max-h-fit max-w-3xl object-cover"
         />
-        <div className="mt-32">
+        <div className="m-8 mt-32">
           <div>
             <div className="grid grid-flow-col grid-rows-2 gap-8">
               <img alt="logo" src={Photo} className="row-span-2" />
