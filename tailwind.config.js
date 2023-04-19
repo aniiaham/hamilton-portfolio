@@ -20,6 +20,7 @@ export default {
     extend: {
       backgroundImage: {
         "homepage-bg": "url('/src/assets/homepage.png')",
+        "aboutpage-bg": "url('/src/assets/aboutpage2.png')",
       },
       fontFamily: {
         primary: ["Abhaya Libres", "sans-serif"],

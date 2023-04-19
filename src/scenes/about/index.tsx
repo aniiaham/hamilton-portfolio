@@ -1,11 +1,18 @@
-import AboutPageBackgroud from "@/assets/aboutpage.png";
+import WavesAboutPage from "@/assets/waves_aboutpage.svg";
 type Props = {};
 
 const Works = (props: Props) => {
   return (
-    <section className="h-full w-full pb-20 first-letter:gap-16" id="about">
-      <div className="relavite">
-        <img alt="background" src={AboutPageBackgroud} />
+    <section
+      className="relative h-full w-full bg-white bg-cover pb-20 first-letter:gap-16 md:h-full"
+      id="about"
+    >
+      <div className=" mx-auto">
+        {/* <img
+          alt="background"
+          src={WavesAboutPage}
+          className="absolute max-h-fit object-cover mix-blend-multiply"
+        /> */}
         <div className="m-10">
           <h1 className="text-3xl font-extrabold text-cyan">WHO AM I?</h1>
           <p className="md:text-startv mt-8 font-primary text-lg font-medium">
