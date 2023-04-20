@@ -1,20 +1,32 @@
 import WavesAboutPage from "@/assets/waves_aboutpage.svg";
 import HText from "@/shared/HText";
+import { motion } from "framer-motion";
+
 type Props = {};
 
 const Works = (props: Props) => {
   return (
     <section
-      className="relative h-full w-full bg-white bg-cover pb-20 first-letter:gap-16 md:h-full"
+      className="container relative mx-auto mt-10 h-full w-full max-w-xl bg-white bg-cover pb-20 first-letter:gap-16 md:h-full"
       id="about"
     >
-      <div className=" mx-auto">
+      <motion.div
+        className=" mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         {/* <img
           alt="background"
           src={WavesAboutPage}
           className="absolute max-h-fit object-cover mix-blend-multiply"
         /> */}
-        <div className="m-10">
+        <div>
           <div className="flex items-center justify-center text-3xl text-gray">
             <HText>WHO AM I?</HText>
           </div>
@@ -24,7 +36,7 @@ const Works = (props: Props) => {
             JavaScript, React.js, TypeScript and Git.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
