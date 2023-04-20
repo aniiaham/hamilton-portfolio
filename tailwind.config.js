@@ -11,7 +11,7 @@ export default {
       white: "#ffffff",
       stone: "#f5f5f4",
       cyan: "#06b6d4",
-      gray: "#C5C8C9",
+      gray: "#40474A",
       tahiti: "#3ab7bf",
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",

@@ -5,13 +5,25 @@ import LinkedIn from "@/assets/Linkedin.svg";
 import Instagram from "@/assets/instagram.svg";
 import Telegram from "@/assets/telegram.svg";
 import GitHub from "@/assets/github.svg";
+import HText from "@/shared/HText";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
     <section className="relative w-full gap-16 overflow-hidden bg-homepage-bg bg-cover bg-no-repeat pt-20 md:h-full">
-      <div className="mx-auto w-full items-center justify-center md:flex md:h-5/6">
+      <motion.div
+        className="mx-auto w-full items-center justify-center md:flex md:h-5/6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <img
           alt="background"
           src={Waves}
@@ -23,8 +35,8 @@ const Home = (props: Props) => {
             <div className="col-span-2" />
             <div className="col-span-1 row-span-1 flex flex-col justify-center font-primary">
               <span className="text-2xl">Hey, I'm Aniia</span>
-              <span className="text-3xl font-extrabold text-cyan">
-                FRONT END DEVELOPER
+              <span className="text-3xl text-gray">
+                <HText>FRONT END DEVELOPER</HText>
               </span>
             </div>
           </div>
@@ -70,7 +82,7 @@ const Home = (props: Props) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

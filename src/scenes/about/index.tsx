@@ -1,4 +1,5 @@
 import WavesAboutPage from "@/assets/waves_aboutpage.svg";
+import HText from "@/shared/HText";
 type Props = {};
 
 const Works = (props: Props) => {
@@ -14,7 +15,9 @@ const Works = (props: Props) => {
           className="absolute max-h-fit object-cover mix-blend-multiply"
         /> */}
         <div className="m-10">
-          <h1 className="text-3xl font-extrabold text-cyan">WHO AM I?</h1>
+          <div className="flex items-center justify-center text-3xl text-gray">
+            <HText>WHO AM I?</HText>
+          </div>
           <p className="md:text-startv mt-8 font-primary text-lg font-medium">
             As a Junior Front-End Developer I am a highly motivated and
             detail-oriented individual with a strong foundation in HTML, CSS,

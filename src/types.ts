@@ -4,3 +4,9 @@ export enum SelectedPage {
   Works = "works",
   Contact = "contact",
 }
+
+export interface ProjectType {
+  title: string;
+  description: string;
+  image: string;
+}
