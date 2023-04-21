@@ -32,7 +32,7 @@ const projects: Array<ProjectType> = [
 
 const Works = (props: Props) => {
   return (
-    <section className="bg-primary-100 w-full py-40">
+    <section className="bg-primary-100 mt-8 w-full py-40" id="works">
       <motion.div
         className="mx-auto w-5/6"
         initial="hidden"
@@ -46,9 +46,7 @@ const Works = (props: Props) => {
       >
         <div className="md:w-3/5">
           <HText>MY WORK</HText>
-          <p className="py-5 ">
-            
-          </p>
+          <p className="py-5 "></p>
         </div>
       </motion.div>
     </section>

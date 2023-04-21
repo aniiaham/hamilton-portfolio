@@ -23,7 +23,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
                 <a href="/#about" className="font-primary">
                   ABOUT
                 </a>
-                <a href="/works" className="font-primary">
+                <a href="/#works" className="font-primary">
                   WORKS
                 </a>
                 <a href="/contact" className="font-primary">

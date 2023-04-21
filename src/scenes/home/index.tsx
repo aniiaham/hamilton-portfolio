@@ -24,11 +24,11 @@ const Home = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <img
+        {/* <img
           alt="background"
           src={Waves}
           className="pointer-events-none absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply "
-        />
+        /> */}
         <div className="mt-32">
           <div className="grid grid-flow-col grid-rows-2 gap-8">
             <img alt="logo" src={Photo} className="row-span-2" />

@@ -1,5 +1,6 @@
 import WavesAboutPage from "@/assets/waves_aboutpage.svg";
 import HText from "@/shared/HText";
+import Waves from "@/assets/Waves.svg";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -7,11 +8,16 @@ type Props = {};
 const Works = (props: Props) => {
   return (
     <section
-      className="container relative mx-auto mt-4 h-full w-full max-w-xl bg-white bg-cover pb-20 first-letter:gap-16 md:h-full"
+      className="relative mx-auto mt-4 h-full w-full max-w-xl bg-cover md:h-full"
       id="about"
     >
+      <img
+        alt="background"
+        src={Waves}
+        className="absolute -z-30 max-h-fit max-w-fit object-cover"
+      />
       <motion.div
-        className=" bg-primary-100 mx-auto w-full py-20"
+        className="mx-auto w-full py-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -33,7 +39,7 @@ const Works = (props: Props) => {
           <HText>SKILLS</HText>
         </div>
         <p className="md:text-startv mt-8 font-primary text-lg font-medium">
-          HTML/CSS JavaScript TypeScript React.js TailwindCSS Figma
+          HTML/CSS JavaScript TypeScript React.js Tailwind CSS Figma
         </p>
       </motion.div>
     </section>
