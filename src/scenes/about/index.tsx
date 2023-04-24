@@ -8,11 +8,16 @@ type Props = {};
 const Works = (props: Props) => {
   return (
     <section
-      className="relative mx-auto h-full w-full bg-aboutpage-bg bg-cover md:h-full"
+      className="relative mt-8 flex h-full w-full flex-col justify-center"
       id="about"
     >
+      <img
+        alt="background"
+        src={Waves}
+        className="absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply "
+      />
       <motion.div
-        className="mx-auto mt-4 w-full max-w-2xl py-20"
+        className="container mx-auto h-full w-full max-w-2xl"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -22,7 +27,7 @@ const Works = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="flex items-center justify-center text-3xl text-gray">
+        <div className="flex items-center justify-center text-gray">
           <HText>WHO AM I?</HText>
         </div>
         <p className="md:text-startv mt-8 font-primary text-lg font-medium">

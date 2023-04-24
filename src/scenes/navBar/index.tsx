@@ -1,12 +1,7 @@
 import Logo from "@/assets/Logo.svg";
 import { SelectedPage } from "@/types";
 
-type Props = {
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: string) => void;
-};
-
-const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
+const NavBar = () => {
   return (
     <nav>
       <div className="fixed top-0 z-30 flex w-full items-center justify-between bg-stone py-5">
