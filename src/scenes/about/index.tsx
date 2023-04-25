@@ -1,6 +1,6 @@
 import WavesAboutPage from "@/assets/waves_aboutpage.svg";
 import HText from "@/shared/HText";
-import Waves from "@/assets/Waves.svg";
+import Waves from "@/assets/Waves2.svg";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -14,7 +14,7 @@ const Works = (props: Props) => {
       <img
         alt="background"
         src={Waves}
-        className="absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply "
+        className="absolute right-0 -z-50 max-h-fit max-w-3xl object-cover mix-blend-multiply"
       />
       <motion.div
         className="container mx-auto h-full w-full max-w-2xl"
@@ -27,7 +27,7 @@ const Works = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="flex items-center justify-center text-gray">
+        <div className="mt-10 flex items-center justify-center">
           <HText>WHO AM I?</HText>
         </div>
         <p className="md:text-startv mt-8 font-primary text-lg font-medium">

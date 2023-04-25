@@ -1,6 +1,4 @@
-import React from "react";
 import Photo from "@/assets/Photo.png";
-import Waves from "@/assets/Waves.svg";
 import LinkedIn from "@/assets/Linkedin.svg";
 import Instagram from "@/assets/instagram.svg";
 import Telegram from "@/assets/telegram.svg";
@@ -17,7 +15,7 @@ const Home = (props: Props) => {
       id="home"
     >
       <motion.div
-        className="mx-auto w-full items-center justify-center md:flex md:h-5/6"
+        className="mx-auto w-full items-center justify-center md:flex"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -38,9 +36,7 @@ const Home = (props: Props) => {
             <div className="col-span-2" />
             <div className="col-span-1 row-span-1 flex flex-col justify-center font-primary">
               <span className="text-2xl">Hey, I'm Aniia</span>
-              <span className="text-3xl text-gray">
-                <HText>FRONT END DEVELOPER</HText>
-              </span>
+              <HText>FRONT END DEVELOPER</HText>
             </div>
           </div>
           <div>

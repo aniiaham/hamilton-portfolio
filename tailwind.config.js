@@ -7,11 +7,10 @@ export default {
     },
     colors: {
       transparent: "transparent",
-      current: "currentColor",
       white: "#ffffff",
       stone: "#f5f5f4",
       cyan: "#06b6d4",
-      gray: "#40474A",
+      gray: "#2A2C2E",
     },
     extend: {
       backgroundImage: {
