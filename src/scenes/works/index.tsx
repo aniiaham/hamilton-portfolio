@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "@/assets/Image(1).svg";
-import Image2 from "@/assets/Image(2).svg";
+import Linktree from "@/assets/Linktree-img.svg";
+import FoodDelivery from "@/assets/FoodDelivery-img.svg";
 
 import { motion } from "framer-motion";
 import { ProjectType } from "@/types";
@@ -20,13 +20,13 @@ const projects: Array<ProjectType> = [
   {
     title: "Linktree",
     description: "Inspired by famous people's social media",
-    image: Image1,
+    image: Linktree,
   },
   {
     title: "Smokat - Food Delivery Project",
     description:
       "Inspired by Russian food delivery mobile app. Esentially samokat is a scooter translated from Russian language",
-    image: Image2,
+    image: FoodDelivery,
   },
 ];
 
