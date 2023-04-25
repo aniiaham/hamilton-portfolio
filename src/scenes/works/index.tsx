@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "@/assets/image1.svg";
-import Image2 from "@/assets/image2.svg";
+import Image1 from "@/assets/Image(1).svg";
+import Image2 from "@/assets/Image(2).svg";
 
 import { motion } from "framer-motion";
 import { ProjectType } from "@/types";
@@ -58,9 +58,9 @@ const Works = (props: Props) => {
       </div>
       <div className="mt-10 h-full w-full overflow-x-auto overflow-y-hidden">
         <ul className="w-[2800px] whitespace-nowrap">
-          {projects.map((item: ProjectType, index) => (
+          {projects.map((item: ProjectType) => (
             <Work
-              key={`${item.title}-${index}`}
+              key={`${item.title}`}
               title={item.title}
               description={item.description}
               image={item.image}
