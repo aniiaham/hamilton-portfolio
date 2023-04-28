@@ -19,26 +19,30 @@ const container = {
 const projects: Array<ProjectType> = [
   {
     title: "Linktree",
-    description: "Inspired by famous people's social media",
+    description:
+      "Inspired by Selena Gomez's social media reference landing page.",
     image: Linktree,
+    website: "https://github.com/aniiaham/linktree",
   },
   {
     title: "Smokat - Food Delivery Project",
     description:
-      "Inspired by Russian food delivery mobile app. Esentially samokat is a scooter translated from Russian language",
+      "Inspired by Food delivery mobile app. Esentially samokat is a scooter translated from Russian.",
     image: FoodDelivery,
+    website: "https://github.com/aniiaham/samokat_delivery",
   },
   {
-    title: "Linktree",
+    title: "Linktree1",
     description: "Inspired by famous people's social media",
     image: Linktree,
+    website: "https://github.com/aniiaham/linktree",
   },
 ];
 
 const Works = (props: Props) => {
   return (
     <section
-      className="mt-60 h-full w-full flex-col items-center justify-center "
+      className="mt-36 h-full w-full flex-col items-center justify-center "
       id="works"
     >
       <motion.div
@@ -79,6 +83,7 @@ const Works = (props: Props) => {
               title={item.title}
               description={item.description}
               image={item.image}
+              website={item.website}
             />
           ))}
         </ul>
