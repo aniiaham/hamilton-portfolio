@@ -8,7 +8,7 @@ type Props = {};
 const Works = (props: Props) => {
   return (
     <section
-      className="relative mt-8 flex h-full w-full flex-col justify-center"
+      className="relative mt-16 flex h-full w-full flex-col justify-center"
       id="about"
     >
       <img
@@ -27,20 +27,36 @@ const Works = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="mt-10 flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-8">
           <HText>WHO AM I?</HText>
+          <p className="font-primary text-lg font-medium">
+            As a Junior Front-End Developer, I bring a strong foundation in web
+            development technologies such as HTML, CSS, JavaScript, React.js,
+            TypeScript, and Git. With a strong drive to succeed, I am highly
+            motivated to learn and expand my skill set, as well as contribute to
+            team projects.
+          </p>
+          <p className="font-primary text-lg font-medium">
+            As a detail-oriented individual, I place great emphasis on
+            delivering high-quality work that is both functional and
+            aesthetically pleasing. I am committed to staying up-to-date with
+            the latest trends and best practices in the field of web
+            development, and am eager to apply my knowledge and expertise to new
+            challenges.
+          </p>
         </div>
-        <p className="md:text-startv mt-8 font-primary text-lg font-medium">
-          As a Junior Front-End Developer I am a highly motivated and
-          detail-oriented individual with a strong foundation in HTML, CSS,
-          JavaScript, React.js, TypeScript and Git.
-        </p>
-        <div className="mt-20 flex items-center justify-center text-gray">
+
+        <div className="mt-20 flex w-full flex-col items-center justify-center gap-4 text-gray">
           <HText>SKILLS</HText>
+          <p className="flex w-full flex-wrap justify-between text-center font-primary text-lg font-medium">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React.js</span>
+            <span>Tailwind CSS</span>
+            <span>Figma</span>
+          </p>
         </div>
-        <p className="md:text-startv mt-8 font-primary text-lg font-medium">
-          HTML/CSS JavaScript TypeScript React.js Tailwind CSS Figma
-        </p>
       </motion.div>
     </section>
   );

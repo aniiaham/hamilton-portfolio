@@ -28,12 +28,17 @@ const projects: Array<ProjectType> = [
       "Inspired by Russian food delivery mobile app. Esentially samokat is a scooter translated from Russian language",
     image: FoodDelivery,
   },
+  {
+    title: "Linktree",
+    description: "Inspired by famous people's social media",
+    image: Linktree,
+  },
 ];
 
 const Works = (props: Props) => {
   return (
     <section
-      className="mt-20 h-full w-full flex-col items-center justify-center "
+      className="mt-60 h-full w-full flex-col items-center justify-center "
       id="works"
     >
       <motion.div
@@ -51,11 +56,21 @@ const Works = (props: Props) => {
           <HText>MY WORK</HText>
         </div>
       </motion.div>
-      <div className="flex items-center justify-center">
+      <motion.div
+        className="mt-6   flex items-center justify-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <p className="font-primary text-lg font-medium">
           Here some my projects!
         </p>
-      </div>
+      </motion.div>
       <div className="mt-10 h-full w-full overflow-x-auto overflow-y-hidden">
         <ul className="w-[2800px] whitespace-nowrap">
           {projects.map((item: ProjectType) => (
