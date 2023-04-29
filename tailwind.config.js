@@ -9,7 +9,7 @@ export default {
       transparent: "transparent",
       white: "#ffffff",
       stone: "#f5f5f4",
-      cyan: "#06b6d4",
+      blue: "#DDE3E1",
       gray: "#2A2C2E",
     },
     extend: {

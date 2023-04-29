@@ -26,6 +26,7 @@ const Works = ({ title, description, image, website }: Props) => {
       </div>
       <img alt={`${image}`} src={image} className="rounded-3xl" />
     </li>
+    
   );
 };
 

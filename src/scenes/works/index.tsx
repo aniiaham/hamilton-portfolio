@@ -42,51 +42,56 @@ const projects: Array<ProjectType> = [
 const Works = (props: Props) => {
   return (
     <section
-      className="mt-36 h-full w-full flex-col items-center justify-center "
+      className="justify-left flex h-full w-full flex-col bg-blue"
       id="works"
     >
-      <motion.div
-        className="mx-auto flex h-full w-full items-center justify-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
-      >
-        <div className="flex h-full w-full items-center justify-center">
-          <HText>MY WORK</HText>
+      <div className="ml-20 flex h-full flex-col gap-6">
+        <motion.div
+          className="mx-auto mt-20 flex h-full w-full"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <div className="items-left justify-left ml-30 flex h-full w-full ">
+            <HText>MY WORK</HText>
+          </div>
+        </motion.div>
+        <motion.div
+          className="items-left justify-left ml-30 flex"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <p className="font-primary text-lg font-medium">
+            Here some my projects!
+          </p>
+        </motion.div>
+        <div className="mt-10 h-full w-full overflow-x-auto overflow-y-hidden">
+          <ul className="w-[2800px] whitespace-nowrap">
+            {projects.map((item: ProjectType) => (
+              <Work
+                key={`${item.title}`}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                website={item.website}
+              />
+            ))}
+          </ul>
         </div>
-      </motion.div>
-      <motion.div
-        className="mt-6   flex items-center justify-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
-      >
-        <p className="font-primary text-lg font-medium">
-          Here some my projects!
+        <p className="right-2 mb-4 flex justify-end font-primary text-lg font-medium">
+          More comig soon...
         </p>
-      </motion.div>
-      <div className="mt-10 h-full w-full overflow-x-auto overflow-y-hidden">
-        <ul className="w-[2800px] whitespace-nowrap">
-          {projects.map((item: ProjectType) => (
-            <Work
-              key={`${item.title}`}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              website={item.website}
-            />
-          ))}
-        </ul>
       </div>
     </section>
   );
