@@ -2,6 +2,7 @@ import Home from "./scenes/home";
 import NavBar from "./scenes/navBar";
 import About from "./scenes/about";
 import Works from "./scenes/works";
+import Contact from "./scenes/contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Works />
+      <Contact />
     </div>
   );
 }

@@ -11,6 +11,7 @@ export default {
       stone: "#f5f5f4",
       blue: "#DDE3E1",
       gray: "#2A2C2E",
+      orange: "#FD8240",
     },
     extend: {
       backgroundImage: {
