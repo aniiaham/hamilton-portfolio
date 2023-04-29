@@ -48,7 +48,7 @@ const Works = (props: Props) => {
 
         <div className="mt-20 flex w-full flex-col items-center justify-center gap-4 text-gray">
           <HText>SKILLS</HText>
-          <p className="flex w-full flex-wrap justify-between text-center font-primary text-lg font-medium">
+          <p className="mb-20 flex w-full flex-wrap justify-between text-center font-primary text-lg font-medium">
             <span>HTML/CSS</span>
             <span>JavaScript</span>
             <span>TypeScript</span>

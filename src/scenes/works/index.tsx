@@ -89,7 +89,7 @@ const Works = (props: Props) => {
             ))}
           </ul>
         </div>
-        <p className="right-2 mb-4 flex justify-end font-primary text-lg font-medium">
+        <p className="mx-20 mb-4 flex justify-end font-primary text-lg font-medium">
           More comig soon...
         </p>
       </div>
