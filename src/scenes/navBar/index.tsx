@@ -21,7 +21,7 @@ const NavBar = () => {
                 <a href="/#works" className="font-primary">
                   WORKS
                 </a>
-                <a href="/contact" className="font-primary">
+                <a href="/#contact" className="font-primary">
                   CONTACT
                 </a>
               </div>
