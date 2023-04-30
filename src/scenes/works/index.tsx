@@ -42,7 +42,7 @@ const projects: Array<ProjectType> = [
 const Works = (props: Props) => {
   return (
     <section
-      className="justify-left flex h-full w-full flex-col bg-blue"
+      className="justify-left flex h-full w-full flex-col bg-blue pb-10"
       id="works"
     >
       <div className="ml-20 flex h-full flex-col gap-6">

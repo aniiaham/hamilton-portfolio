@@ -48,7 +48,7 @@ const Home = (props: Props) => {
           {/*LINKS*/}
           <div className="mx-h-fit bottom-0 w-full py-20">
             <div className="mx-auto w-5/6">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-evenly">
                 <a
                   href="https://www.instagram.com/aniiahamilton/"
                   target="_blank"

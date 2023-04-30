@@ -3,6 +3,7 @@ import NavBar from "./scenes/navBar";
 import About from "./scenes/about";
 import Works from "./scenes/works";
 import Contact from "./scenes/contact";
+import Footer from "./scenes/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }
