@@ -11,7 +11,7 @@ const Works = ({ title, description, image, website }: Props) => {
   const overlayStyles = `p-5 absolute z-30 flex 
     h-[270px] w-[380px] rounded-3xl bg-opacity-90 text-white flex-col items-center justify-center
     whitespace-normal text-center
-    opacity-0 transition duration-600 hover:opacity-100 bg-gray`;
+    opacity-0 transition duration-600 hover:opacity-90 bg-gray`;
 
   return (
     <li className="relative mx-5 inline-block h-full">

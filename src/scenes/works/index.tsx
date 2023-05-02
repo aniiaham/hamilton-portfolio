@@ -89,9 +89,19 @@ const Works = (props: Props) => {
             ))}
           </ul>
         </div>
-        <p className="mx-20 mb-4 flex justify-end font-primary text-lg font-medium">
+        <motion.p
+          className="mx-20 mb-4 flex justify-end font-primary text-lg font-medium"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           More comig soon...
-        </p>
+        </motion.p>
       </div>
     </section>
   );

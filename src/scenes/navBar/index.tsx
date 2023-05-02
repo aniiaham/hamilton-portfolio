@@ -4,7 +4,7 @@ import { SelectedPage } from "@/types";
 const NavBar = () => {
   return (
     <nav>
-      <div className="fixed top-0 z-30 flex w-full items-center justify-between bg-stone py-5">
+      <div className="fixed top-0 z-50 flex w-full items-center justify-between bg-stone py-5">
         <div className="mx-auto flex items-center justify-between">
           <div className="flex w-full items-center gap-20">
             {/*LEFT SIDE*/}
