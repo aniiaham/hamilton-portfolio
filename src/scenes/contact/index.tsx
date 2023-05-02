@@ -7,7 +7,7 @@ const Contact = (props: Props) => {
   return (
     <section id="contact" className="mb-16 mt-16">
       <motion.div
-        className="ml-20 h-full w-full"
+        className="ml-20 h-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

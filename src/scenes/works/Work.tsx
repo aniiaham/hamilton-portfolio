@@ -14,7 +14,7 @@ const Works = ({ title, description, image, website }: Props) => {
     opacity-0 transition duration-600 hover:opacity-100 bg-gray`;
 
   return (
-    <li className="relative mx-5 inline-block h-[380px] w-[450px]">
+    <li className="relative mx-5 inline-block h-full">
       <div className={overlayStyles}>
         <p className="font-primary text-2xl font-medium">{title}</p>
         <p className="font-primary font-medium">{description}</p>
@@ -26,7 +26,6 @@ const Works = ({ title, description, image, website }: Props) => {
       </div>
       <img alt={`${image}`} src={image} className="rounded-3xl" />
     </li>
-    
   );
 };
 

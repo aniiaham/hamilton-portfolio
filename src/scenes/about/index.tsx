@@ -17,7 +17,7 @@ const Works = (props: Props) => {
         className="absolute right-0 -z-50 max-h-fit max-w-3xl object-cover mix-blend-multiply"
       />
       <motion.div
-        className="container mx-auto h-full w-full max-w-2xl"
+        className="container mx-auto h-full max-w-2xl"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

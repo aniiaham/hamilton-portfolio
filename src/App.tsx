@@ -7,14 +7,16 @@ import Footer from "./scenes/footer";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <NavBar />
-      <Home />
-      <About />
-      <Works />
-      <Contact />
-      <Footer />
-    </div>
+      <div className="App">
+        <Home />
+        <About />
+        <Works />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 

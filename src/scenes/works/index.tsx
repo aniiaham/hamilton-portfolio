@@ -77,7 +77,7 @@ const Works = (props: Props) => {
           </p>
         </motion.div>
         <div className="mt-10 h-full w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
+          <ul className="overflow-y-hidden whitespace-nowrap">
             {projects.map((item: ProjectType) => (
               <Work
                 key={`${item.title}`}
