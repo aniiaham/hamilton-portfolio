@@ -37,6 +37,12 @@ const projects: Array<ProjectType> = [
     image: Linktree,
     website: "https://github.com/aniiaham/linktree",
   },
+  {
+    title: "Linktree2",
+    description: "Inspired by famous people's social media",
+    image: Linktree,
+    website: "https://github.com/aniiaham/linktree",
+  },
 ];
 
 const Works = (props: Props) => {

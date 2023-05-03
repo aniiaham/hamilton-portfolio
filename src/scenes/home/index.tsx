@@ -1,10 +1,7 @@
 import Photo from "@/assets/Photo.png";
-import LinkedIn from "@/assets/Linkedin.svg";
-import Instagram from "@/assets/instagram.svg";
-import Telegram from "@/assets/telegram.svg";
-import GitHub from "@/assets/github.svg";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
+import Socials from "@/shared/Socials";
 
 type Props = {};
 
@@ -25,11 +22,6 @@ const Home = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        {/* <img
-          alt="background"
-          src={Waves}
-          className="pointer-events-none absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply "
-        /> */}
         <div className="mt-32">
           <div className="grid grid-flow-col grid-rows-2 gap-8">
             <img alt="logo" src={Photo} className="row-span-2" />
@@ -47,38 +39,7 @@ const Home = (props: Props) => {
           </div>
           {/*LINKS*/}
           <div className="mx-h-fit bottom-0 w-full py-20">
-            <div className="mx-auto w-5/6">
-              <div className="flex items-center justify-evenly">
-                <a
-                  href="https://www.instagram.com/aniiahamilton/"
-                  target="_blank"
-                  className="cursor-pointer hover:animate-bounce"
-                >
-                  <img alt="instagram" src={Instagram} />
-                </a>
-                <a
-                  href="https://t.me/aniiahamilton"
-                  target="_blank"
-                  className="cursor-pointer hover:animate-bounce"
-                >
-                  <img alt="telegram" src={Telegram} />
-                </a>
-                <a
-                  href="https://github.com/aniiaham"
-                  target="_blank"
-                  className="cursor-pointer hover:animate-bounce"
-                >
-                  <img alt="github" src={GitHub} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aniia-hamilton/"
-                  target="_blank"
-                  className="cursor-pointer hover:animate-bounce"
-                >
-                  <img alt="linkedin" src={LinkedIn} />
-                </a>
-              </div>
-            </div>
+            <Socials />
           </div>
         </div>
       </motion.div>
