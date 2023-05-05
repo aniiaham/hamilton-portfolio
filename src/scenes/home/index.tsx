@@ -12,7 +12,7 @@ const Home = (props: Props) => {
       id="home"
     >
       <motion.div
-        className="mx-auto w-full items-center justify-center md:flex"
+        className="w-full items-center justify-center md:flex"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -22,20 +22,20 @@ const Home = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="mt-32">
-          <div className="grid grid-flow-col grid-rows-2 gap-8">
+        <div className="container mx-auto mt-32 max-w-3xl">
+          <div className="flex flex-wrap gap-8 ">
             <img alt="logo" src={Photo} className="row-span-2" />
-            <div className="col-span-2" />
-            <div className="col-span-1 row-span-1 flex flex-col justify-center font-primary">
-              <span className="text-2xl">Hey, I'm Aniia</span>
-              <HText>FRONT END DEVELOPER</HText>
+            <div className="flex flex-col justify-end sm:mb-10">
+              <div className="col-span-2" />
+              <div className="col-span-1 row-span-1 flex flex-col justify-center font-primary">
+                <span className="text-2xl">Hey, I'm Aniia</span>
+                <HText>FRONT END DEVELOPER</HText>
+              </div>
             </div>
-          </div>
-          <div>
-            <p className="md:text-startv mt-8 font-primary text-lg font-medium">
-              I have a passion for creating dynamic and engaging UI <br /> and a
-              drive to learn and improve my skills
-            </p>
+            <div className="mt-8 flex flex-col font-primary text-lg font-medium">
+              <p>I have drive to learn and improve my skills as well as</p>
+              <p> a passion for creating dynamic and engaging UI.</p>
+            </div>
           </div>
           {/*LINKS*/}
           <div className="mx-h-fit bottom-0 w-full py-20">

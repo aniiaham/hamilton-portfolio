@@ -13,28 +13,28 @@ const Socials = (props: Props) => {
           <a
             href="https://www.instagram.com/aniiahamilton/"
             target="_blank"
-            className="cursor-pointer hover:animate-bounce"
+            className="cursor-pointer"
           >
             <img alt="instagram" src={Instagram} />
           </a>
           <a
             href="https://t.me/aniiahamilton"
             target="_blank"
-            className="cursor-pointer hover:animate-bounce"
+            className="cursor-pointer"
           >
             <img alt="telegram" src={Telegram} />
           </a>
           <a
             href="https://github.com/aniiaham"
             target="_blank"
-            className="cursor-pointer hover:animate-bounce"
+            className="cursor-pointer"
           >
             <img alt="github" src={GitHub} />
           </a>
           <a
             href="https://www.linkedin.com/in/aniia-hamilton/"
             target="_blank"
-            className="cursor-pointer hover:animate-bounce"
+            className="cursor-pointer"
           >
             <img alt="linkedin" src={LinkedIn} />
           </a>

@@ -106,7 +106,7 @@ const Works = (props: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          More comig soon...
+          More coming soon...
         </motion.p>
       </div>
     </section>
