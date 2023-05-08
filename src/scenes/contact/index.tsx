@@ -20,11 +20,7 @@ const Contact = (props: Props) => {
         <HText>CONTACT ME</HText>
       </motion.div>
       <div className="mx-20 mt-10">
-        <form
-          target="_blank"
-          action="http://formsubmit.co/aniya_axm@icloud.com"
-          method="post"
-        >
+        <form target="_blank" method="post">
           <input
             className="mb-5 w-full rounded-lg bg-blue px-5 py-3 placeholder-gray"
             type="text"
@@ -43,6 +39,7 @@ const Contact = (props: Props) => {
           />
           <button
             type="submit"
+            disabled={true}
             className="mt-5 rounded-lg bg-orange px-20 py-3 text-gray transition duration-500 hover:text-white"
           >
             SEND

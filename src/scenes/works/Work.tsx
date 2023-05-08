@@ -1,4 +1,3 @@
-
 type Props = {
   title: string;
   description?: string;
@@ -23,7 +22,11 @@ const Works = ({ title, description, image, website }: Props) => {
           </button>
         </a>
       </div>
-      <img alt={`${image}`} src={image} className="rounded-3xl" />
+      <img
+        alt={`${image}`}
+        src={image}
+        className="h-[270px] w-[380px] rounded-3xl"
+      />
     </li>
   );
 };
