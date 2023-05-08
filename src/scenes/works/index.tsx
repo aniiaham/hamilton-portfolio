@@ -1,6 +1,7 @@
 import React from "react";
 import Linktree from "@/assets/Linktree-img.svg";
 import FoodDelivery from "@/assets/FoodDelivery-img.svg";
+import Wordle from "@/assets/Wordle-img.png";
 
 import { motion } from "framer-motion";
 import { ProjectType } from "@/types";
@@ -20,9 +21,15 @@ const projects: Array<ProjectType> = [
   {
     title: "Linktree",
     description:
-      "Inspired by Selena Gomez's social media reference landing page.",
+      "Inspired by Selena Gomez's social media reference landing page",
     image: Linktree,
-    website: "https://github.com/aniiaham/linktree",
+    website: "https://linktree.aniia.dev",
+  },
+  {
+    title: "Wordle Masters",
+    description: "Inspired by famous Wordle App",
+    image: Wordle,
+    website: "https://wordle-js-eight.vercel.app",
   },
   {
     title: "Smokat - Food Delivery Project",
@@ -30,18 +37,6 @@ const projects: Array<ProjectType> = [
       "Inspired by Food delivery mobile app. Esentially samokat is a scooter translated from Russian.",
     image: FoodDelivery,
     website: "https://github.com/aniiaham/samokat_delivery",
-  },
-  {
-    title: "Linktree1",
-    description: "Inspired by famous people's social media",
-    image: Linktree,
-    website: "https://github.com/aniiaham/linktree",
-  },
-  {
-    title: "Linktree2",
-    description: "Inspired by famous people's social media",
-    image: Linktree,
-    website: "https://github.com/aniiaham/linktree",
   },
 ];
 
