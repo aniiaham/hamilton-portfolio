@@ -25,7 +25,7 @@ const Works = ({ title, description, image, website }: Props) => {
       <img
         alt={`${image}`}
         src={image}
-        className="h-[270px] w-[380px] rounded-3xl"
+        className=" h-[270px] w-[380px] rounded-3xl"
       />
     </li>
   );
