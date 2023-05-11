@@ -8,7 +8,7 @@ type Props = {};
 const Works = (props: Props) => {
   return (
     <section
-      className="relative mt-16 flex h-full w-full flex-col justify-center"
+      className="relative mt-16 flex h-full w-full flex-col justify-center px-6"
       id="about"
     >
       <img

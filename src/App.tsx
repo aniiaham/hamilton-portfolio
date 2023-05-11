@@ -9,13 +9,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="App">
+      <div className="flex w-full flex-col">
         <Home />
         <About />
         <Works />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

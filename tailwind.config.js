@@ -2,9 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    container: {
-      padding: "2rem",
-    },
+    
     backgroundImage: {
       backgroundWaves: "url('/src/assets/Waves.png')",
     },

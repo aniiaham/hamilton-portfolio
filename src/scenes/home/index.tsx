@@ -8,7 +8,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <section
-      className="relative w-full gap-16 overflow-hidden bg-homepage-bg bg-cover bg-no-repeat pt-20 md:h-full"
+      className="relative w-full gap-16 overflow-hidden bg-homepage-bg bg-cover bg-no-repeat px-6 pt-20 md:h-full"
       id="home"
     >
       <motion.div
