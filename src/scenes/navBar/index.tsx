@@ -1,5 +1,5 @@
 import Logo from "@/assets/Logo.svg";
-import BurgerIcon from "@icons/burger.svg";
+import MobileNav from "@/components/mobile-nav";
 
 const NavBar = () => {
   return (
@@ -11,6 +11,7 @@ const NavBar = () => {
           src={Logo}
           className="flex items-start justify-start pl-6"
         />
+        <MobileNav />
         {/*RIGHT SIDE*/}
         <div className="hidden w-full items-center justify-center sm:flex">
           <div className="flex items-center gap-16 text-lg">

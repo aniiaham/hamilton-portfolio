@@ -22,7 +22,7 @@ const Home = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="container mx-auto mt-32 max-w-3xl">
+        <div className="mt-32 max-w-3xl">
           <div className="flex flex-wrap gap-8 ">
             <img alt="logo" src={Photo} className="row-span-2" />
             <div className="flex flex-col justify-end sm:mb-10">
