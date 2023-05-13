@@ -12,20 +12,33 @@ import { Icons } from "./icons";
 
 const MobileNav = () => {
   return (
-    <Sheet>
-      <SheetTrigger>
-        <Icons.burger />
-      </SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Are you sure absolutely sure?</SheetTitle>
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </SheetDescription>
-        </SheetHeader>
-      </SheetContent>
-    </Sheet>
+    <div className="fixed flex w-full items-center justify-end pr-8 pt-3">
+      <Sheet>
+        <SheetTrigger>
+          <Icons.burger />
+        </SheetTrigger>
+        <SheetContent>
+          <SheetHeader>
+            <SheetDescription>
+              <div className="items-left flex flex-col gap-16 text-lg text-black">
+                <a href="/" className="font-primary">
+                  HOME
+                </a>
+                <a href="/#about" className="font-primary">
+                  ABOUT
+                </a>
+                <a href="/#works" className="font-primary">
+                  WORKS
+                </a>
+                <a href="/#contact" className="font-primary">
+                  CONTACT
+                </a>
+              </div>
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
+    </div>
   );
 };
 
