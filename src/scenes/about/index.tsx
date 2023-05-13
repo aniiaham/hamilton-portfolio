@@ -8,16 +8,16 @@ type Props = {};
 const Works = (props: Props) => {
   return (
     <section
-      className="relative mt-16 flex h-full w-full flex-col justify-center"
+      className="relative mt-16 flex h-full w-full flex-col justify-center px-6"
       id="about"
     >
       <img
         alt="background"
         src={Waves}
-        className="absolute right-0 -z-50 max-h-fit max-w-3xl object-cover mix-blend-multiply"
+        className="z-60 absolute right-0 max-h-fit max-w-3xl object-cover mix-blend-multiply"
       />
       <motion.div
-        className="container mx-auto h-full max-w-2xl"
+        className="mx-auto h-full max-w-2xl"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

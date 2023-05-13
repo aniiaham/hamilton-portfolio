@@ -8,7 +8,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <section
-      className="relative w-full gap-16 overflow-hidden bg-homepage-bg bg-cover bg-no-repeat pt-20 md:h-full"
+      className="relative w-full gap-16 overflow-hidden bg-homepage-bg bg-cover bg-no-repeat px-6 pt-20 md:h-full"
       id="home"
     >
       <motion.div
@@ -22,7 +22,7 @@ const Home = (props: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className="container mx-auto mt-32 max-w-3xl">
+        <div className="mt-32 max-w-3xl">
           <div className="flex flex-wrap gap-8 ">
             <img alt="logo" src={Photo} className="row-span-2" />
             <div className="flex flex-col justify-end sm:mb-10">
