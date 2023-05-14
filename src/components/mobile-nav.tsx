@@ -12,7 +12,7 @@ import { Icons } from "./icons";
 
 const MobileNav = () => {
   return (
-    <div className="fixed flex w-full items-center justify-end pr-8 pt-3">
+    <div className="fixed flex w-full items-center justify-end pr-8 pt-3 sm:hidden">
       <Sheet>
         <SheetTrigger>
           <Icons.burger />
