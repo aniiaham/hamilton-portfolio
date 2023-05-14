@@ -1,41 +1,48 @@
-import React from "react";
-import BurgerIcon from "../icons/burger.svg";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import React, { useState } from "react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Icons } from "./icons";
 
 const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const isOpenHandler = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="fixed flex w-full items-center justify-end pr-8 pt-3 sm:hidden">
-      <Sheet>
+      <Sheet
+        open={isOpen}
+        onOpenChange={(open) => {
+          if (open) {
+            setIsOpen(true);
+          } else {
+            setIsOpen(false);
+          }
+        }}
+      >
         <SheetTrigger>
           <Icons.burger />
         </SheetTrigger>
         <SheetContent>
-          <SheetHeader>
-            <SheetDescription>
-              <div className="items-left flex flex-col gap-16 text-lg text-black">
-                <a href="/" className="font-primary">
-                  HOME
-                </a>
-                <a href="/#about" className="font-primary">
-                  ABOUT
-                </a>
-                <a href="/#works" className="font-primary">
-                  WORKS
-                </a>
-                <a href="/#contact" className="font-primary">
-                  CONTACT
-                </a>
-              </div>
-            </SheetDescription>
-          </SheetHeader>
+          <div className="items-left flex flex-col gap-16 text-lg text-black">
+            <a href="/" className="font-primary">
+              HOME
+            </a>
+            <a href="/#about" className="font-primary" onClick={isOpenHandler}>
+              ABOUT
+            </a>
+            <a href="/#works" className="font-primary" onClick={isOpenHandler}>
+              WORKS
+            </a>
+            <a
+              href="/#contact"
+              className="font-primary"
+              onClick={isOpenHandler}
+            >
+              CONTACT
+            </a>
+          </div>
         </SheetContent>
       </Sheet>
     </div>
