@@ -53,6 +53,7 @@ const Works = (props: Props) => {
             <span>JavaScript</span>
             <span>TypeScript</span>
             <span>React.js</span>
+            <span>Next.js</span>
             <span>Tailwind CSS</span>
             <span>Figma</span>
           </p>

@@ -22,7 +22,7 @@ const Contact = (props: Props) => {
       <div className="mx-20 mt-10">
         <form target="_blank" method="post">
           <input
-            className="mb-5 w-full rounded-lg bg-blue px-5 py-3 placeholder-gray"
+            className="mb-5 w-full  rounded-lg bg-blue px-5 py-3 placeholder-gray"
             type="text"
             placeholder="NAME"
           />
